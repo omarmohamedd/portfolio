@@ -1,0 +1,559 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*:focus {
+    outline: none;
+}
+body
+{
+    font-family: "Montserrat";
+    background: #151516;
+}
+
+#section-i
+{
+background: #151516;
+height: 100%;
+width: 100%;
+    overflow: hidden;
+}
+
+.section-i-text
+{
+  overflow: hidden;
+    position: relative;
+    cursor: none;
+  
+    
+}
+
+.section-i-text p
+{
+   font-size: 52px;
+    font-weight: 800;
+    color: white;
+    line-height:9vh;
+    overflow: hidden;
+    
+}
+
+.text-layer
+{
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   background: #765B81;
+    mix-blend-mode: darken;
+    transform: translateY(-100%);
+   
+}
+.cursor
+{
+    height: 50px;
+    width: 50px;
+    border: solid 2px #765B81;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transform: translate(-50%,-50%);
+    
+}
+.row-fix
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-i-img-div
+{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.section-i-img
+{
+    height: 24%;
+    overflow: hidden;
+   
+    
+}
+
+
+.svg-div
+{
+    height: 100%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25%;
+    left: 150px;
+}
+#logo
+{
+    animation: fill 2.5s ease forwards 2.5s;
+    font-size: 60px;
+}
+
+#logo path:nth-child(1)
+{
+   stroke-dasharray:750;
+      stroke-dashoffset:750;
+    animation: svg 2.5s ease forwards;
+}
+#logo path:nth-child(2)
+{
+  stroke-dasharray:750;
+      stroke-dashoffset:750;
+    animation: svg 2.5s ease forwards 0.6s;
+}
+#logo path:nth-child(3)
+{
+   stroke-dasharray:750;
+      stroke-dashoffset:750;
+     animation: svg 2.5s ease forwards 1.2s;
+}
+#logo path:nth-child(4)
+{
+  stroke-dasharray:750;
+      stroke-dashoffset:750;
+     animation: svg 2.5s ease forwards 1.8s;
+}
+
+@keyframes svg
+{
+    to
+    {
+        stroke-dashoffset:0;
+    }
+}
+
+@keyframes fill
+{
+    from
+    {
+        fill:transparent;
+    }
+    to
+    {
+        fill:white;
+    }
+}
+
+.space
+{
+    height: 10%;
+  
+}
+
+.typeWrite
+{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    color: whitesmoke;
+   
+}
+
+.element
+{
+    font-size: 70px;
+    font-weight: 700;
+color: white;
+    
+}
+
+#section-ii
+{
+    height: 100%;
+    background: #151516;
+}
+.section-ii-wraper
+{
+    display: flex;
+    min-height: 100vh;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto 0 auto;
+    
+}
+
+.section-ii-info
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    box-shadow: 7px 7px 12px  black;
+    position: relative;
+    overflow: hidden;
+    
+}
+.section-ii-info-layer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #151516;
+}
+.section-ii-info h2
+{
+    font-size: 60px;
+   font-weight: 700;
+    overflow: hidden;
+}
+.section-ii-info h2 span
+{
+    font-size: 100px;
+   font-weight: 700;
+    color: darkslategray;
+}
+.section-ii-info p
+{
+    font-size: 20px;
+   font-weight: 500;
+    line-height: 25px;
+    text-align:left;
+    line-height: 30px;
+    
+}
+.section-ii-prog
+{
+    flex: 1;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: relative;
+}
+.section-ii-prog-layer
+{
+     position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: #151516;
+    z-index: 999999999999;
+}
+.prog-bar 
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+   
+}
+.bar
+{
+    width: 400px;
+    height: 10px;
+    background-color:whitesmoke;
+    opacity:0.5;
+    border-radius: 20px;
+   position: relative;
+    z-index: 33333;
+}
+
+.bar-color
+{
+    position: absolute;
+    top:0;
+    left: 0;
+     width: 0px;
+    height: 10px;
+    opacity: 1;
+    background-color:darkslategray;
+}
+
+
+
+
+#section-iii
+{
+    height: 100%;
+    background:  #151516;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+    
+}
+
+.space-i
+{
+    height: 10%;
+}
+#section-iii h2
+{
+    font-size: 60px;
+   font-weight: 700;
+    overflow: hidden;
+    color: white;
+   
+    
+}
+
+.i
+{
+    z-index: 22333333333;
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+
+.img-layer
+{
+    height: 100%;
+    width: 100%;
+    background:#151516;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.move-top-left
+{
+    height: 50%;
+    width: 50%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.move-top-right
+{
+    height: 50%;
+    width: 50%;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.move-bot-left
+{
+    height: 50%;
+    width: 50%;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.move-bot-right
+{
+    height: 50%;
+    width: 50%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.img-p
+{
+    position: absolute;
+    bottom: 0;
+    right: -95;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.img-p-2
+{
+    position: absolute;
+    bottom: 0;
+    left: -100;
+    color: white;
+    font-size: 20px;
+    font-weight: 600; 
+}
+.gallery-div
+{
+    width: 400px;
+    height: 300px;
+    overflow:visible;
+   
+}
+.gallery-div img
+{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+
+.magnet
+{
+   height: 40px;
+    width: 40px;
+   
+}
+
+.magnet-i svg
+{
+    height: 100%;
+    width: 100%;
+    fill:transparent;
+    transform: rotateZ(-90deg);
+  
+}
+
+.magnet-ii svg
+{
+    height: 100%;
+    width: 100%;
+     fill:transparent;
+    transform: rotateZ(90deg);
+  
+}
+
+.drawSvg
+{
+  stroke-dashoffset:-20000;
+  stroke-dasharray:20000;
+     animation: gallerySvg 2s ease forwards;
+    fill:transparent;
+  stroke:white;
+  stroke-width:10px;
+  
+    
+}
+
+
+@keyframes gallerySvg
+{
+    to
+    {
+        stroke-dashoffset:0;
+        
+    }
+}
+
+
+#section-iiii
+{
+     height: 100%;
+    background:  #151516;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+     
+    
+}
+
+
+.img-layer-i
+{
+    height: 100%;
+    width: 100%;
+    background:#151516;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-p-i
+{
+    position: absolute;
+    bottom: 0;
+    right: -97;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.img-p-2-i
+{
+    position: absolute;
+    bottom: 0;
+    left: -100;
+    color: white;
+    font-size: 20px;
+    font-weight: 600; 
+}
+.gallery-div-i
+{
+    width: 400px;
+    height: 300px;
+    overflow:visible;
+   
+}
+.gallery-div-i img
+{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.grab
+{
+   height: 40px;
+    width: 40px;
+   
+}
+
+.grab-i svg
+{
+    height: 100%;
+    width: 100%;
+    fill:transparent;
+    transform: rotateZ(-90deg);
+  
+}
+
+.grab-ii svg
+{
+    height: 100%;
+    width: 100%;
+     fill:transparent;
+    transform: rotateZ(90deg);
+  
+}
+
+.drawSvg-i
+{
+  stroke-dashoffset:-20000;
+  stroke-dasharray:20000;
+     animation: grabSvg 2s ease forwards;
+    fill:transparent;
+  stroke:white;
+  stroke-width:10px;
+  
+    
+}
+
+
+@keyframes grabSvg
+{
+    to
+    {
+        stroke-dashoffset:0;
+        
+    }
+}
+
